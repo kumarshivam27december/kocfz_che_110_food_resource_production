@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<p lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Food wastage and management</title>
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: cursive;
+background-color: #b9e9fa;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: teal;
+color: #fff;
+}
+
+.nav-links a {
+color: #fff;
+}
+
+/* LOGO */
+.logo {
+font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+display: flex;
+gap: 1em;
+font-size: 18px;
+}
+
+.menu li:hover {background-color: #4c9e9e;
+border-radius: 5px;
+transition: 0.3s ease;
+}
+
+.menu li {
+padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+position: relative; 
+}
+
+.dropdown {
+background-color: rgb(1, 139, 139);
+padding: 1em 0;
+position: absolute; /*WITH RESPECT TO PARENT*/
+display: none;
+border-radius: 8px;
+top: 35px;
+}
+
+.dropdown li + li {
+margin-top: 10px;
+}
+
+.dropdown li {
+padding: 0.5em 1em;
+width: 8em;
+text-align: center;
+}
+
+.dropdown li:hover {
+background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    
+    .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+    background-color: #4c9e9e;
+    }
+    }
+    footer {
+        background-color: #f0f0f0; /* Set background color */
+        padding: 10px; /* Add some padding around the footer */
+        text-align: center; /* Center align the footer content */
+        position: fixed; /* Fix the footer to the bottom of the page */
+        bottom: 0; /* Position the footer at the bottom of the page */
+        width: 100%; /* Set the footer width to 100% */
+    }
+    
+    /* Define styles for footer content */
+    footer p {
+        margin: 5px 0; /* Add some margin between paragraphs within the footer */
+    }
+    .abc1, .abc2, .abc3, .abc4, .abc5 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+</style>
+</head>
+
+<p>
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo" style="color:red;">Food wastage and management</div>
+
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+
+<!-- USING CHECKBOX HACK -->
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<!-- NAVIGATION MENUS -->
+<div class="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+
+<li class="services">
+<a href="reference.html">References</a>
+
+<!-- DROPDOWN MENU -->
+<!-- <ul class="dropdown">
+<li><a href="/">Dropdown 1 </a></li>
+<li><a href="/">Dropdown 2</a></li>
+<li><a href="/">Dropdown 3</a></li><li><a href="/">Dropdown 4</a></li>
+</ul> -->
+
+</li>
+<li><a href="chart.pdf">charts</a></li>
+<li><a href="https://www.linkedin.com/in/2004shivamkumar/">Contact</a></li>
+</div>
+</ul>
+</nav>
+<p class="body" style="background-color:#fdbdea">
+
+<h1 style="color:green">
+    what is food wastage 
+</h1>
+<p style="font-size: larger;">Food wastage, also known as food waste, refers to the loss or disposal of food that is still safe and edible, but is not consumed or utilized for its intended purpose. Food wastage can occur at various stages of the food supply chain, including food production, transportation, processing, retail, and consumer levels. It can be caused by a variety of factors, such as overproduction, inadequate storage and transportation infrastructure, imperfect produce standards, and consumer behaviors.
+
+  Food wastage is a global problem with significant environmental, social, and economic implications. It contributes to resource depletion, biodiversity loss, greenhouse gas emissions, and increased costs along the food supply chain. Food wastage also has social implications, including food insecurity, hunger, and inequalities.
+  
+  Efforts to address food wastage include strategies and practices aimed at reducing food waste and maximizing the utilization of food resources. This can involve improved production planning, better storage and transportation practices, proper food labeling, surplus food donation programs, consumer awareness and behavior change campaigns, and innovative technologies or initiatives in food waste management, such as composting, anaerobic digestion, and food recovery for animal feed or bioenergy. Policies, regulations, education, and awareness, as well as partnerships and collaborations among stakeholders, are also important in addressing food wastage and promoting sustainable food resource production.
+  <br><br>
+
+<div class="row">
+    <div class="column">
+      <img src="fw2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw2.jpg"  style="width:100%">
+    </div>
+  </div>
+
+</p>
+<h1 style="color:green">
+    Why we need to stop the food wastage
+</h1>
+<p style="font-size: larger;">
+  <br>
+  <h3>
+    There are several compelling reasons why we need to take action to reduce food wastage:
+  </h3>
+  <h3>
+    <br>
+    Environmental Impact
+    <br>
+  </h3>
+  <p>
+    Food wastage has significant environmental impacts. When food is wasted, it results in the squandering of valuable resources used in food production, such as water, land, energy, and labor. Additionally, decomposing food in landfills produces methane, a potent greenhouse gas that contributes to climate change. By reducing food waste, we can conserve resources, reduce greenhouse gas emissions, and mitigate the environmental impact of food production.
+  </p>
+  <h3>
+    <br>
+    Social Impact
+    <br>
+  </h3>
+  <p>
+    Food wastage has social implications as well. Globally, an estimated 811 million people suffer from hunger and malnutrition, while one-third of all food produced for human consumption is wasted. Reducing food waste can help address food insecurity and hunger, and ensure that food resources are utilized efficiently to meet the nutritional needs of all people, particularly vulnerable populations.
+  </p>
+  <h3>
+    <br>
+    Economic Impact
+    <br>
+
+  </h3>
+  <p>
+    Food wastage also has economic implications. Food waste results in financial losses for farmers, producers, retailers, and consumers, as well as increased costs along the food supply chain. By reducing food waste, we can save money, improve profitability for businesses, and promote a more efficient and sustainable food system.
+  </p>
+  <h3>
+    <br>
+    Climate Change Mitigation
+    <br>
+  </h3>
+  <p>
+    Food wastage is a significant contributor to greenhouse gas emissions, particularly methane from decomposing food in landfills. Methane is a potent greenhouse gas that is responsible for a substantial portion of global warming. By reducing food waste, we can help mitigate climate change by reducing methane emissions and other greenhouse gas emissions associated with food production.
+  </p>
+  
+<br><br>
+</p>
+<div class="row">
+    <div class="column">
+      <img src="fw4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw4.jpg"  style="width:100%">
+    </div>
+  </div>
+<h1>
+    How can we prevent food wastage
+</h1>
+<br>
+  <h3>
+    There are several effective strategies and practices that can be implemented to prevent food wastage and promote sustainable food resource production  </h3>
+  <h3>
+    <br>
+    Improved Production Planning
+    <br>
+  </h3>
+  <p style="font-size: larger;">
+    Proper production planning can help prevent overproduction and ensure that food is produced based on actual demand. This can involve optimizing planting, harvesting, and processing schedules, as well as implementing better inventory management and forecasting practices.  </p>
+  
+</p>
+  <h3>
+    <br>
+    Efficient Storage and Transportation
+    <br>
+  </h3>
+  <p style="font-size: larger;">
+    Proper storage and transportation practices can prevent food spoilage, damage, and losses during transit. This can include maintaining appropriate temperature and humidity levels, using proper packaging and handling techniques, and optimizing transportation routes and logistics to minimize food waste.  </p>
+</p>
+    <h3>
+    <br>
+    Standardized Date Labeling
+    <br>
+
+  </h3>
+  <p style="font-size: larger;">
+    Confusing date labels on food products often lead to unnecessary discarding of still safe and edible food. Implementing standardized date labeling practices, such as "best before" and "use by" dates, can help reduce consumer confusion and prevent premature disposal of food.  </p>
+  </p>
+    <h3>
+    <br>
+    Surplus Food Donation Programs
+    <br>
+  </h3>
+  <p style="font-size: larger;">
+    Donating surplus food to charitable organizations, food banks, or community programs can divert edible food from going to waste and help address food insecurity. Many countries and regions have established surplus food donation programs to connect surplus food with those in need.  </p>
+  <!-- </p> -->
+
+
+<!-- </p> -->
+<h3>
+  <br>
+  Consumer Awareness and Behavior Change
+  <br>
+</h3>
+<p style="font-size: larger;">
+  Educating consumers about the impacts of food wastage and empowering them with knowledge and skills to reduce food waste at home can be effective in preventing food wastage. This can include tips on proper food storage, meal planning, portion control, and creative ways to use leftovers.
+</p>
+<h3>
+  <br>
+  Innovation and Technology
+  <br>
+</h3>
+<p style="font-size: larger;">
+  There are various innovative technologies and initiatives that can be used to prevent food waste, such as composting, anaerobic digestion, and food recovery for animal feed or bioenergy. Embracing new technologies and solutions can help divert food waste from landfills and create value-added products from food waste.
+</p>
+<div class="row">
+    <div class="column">
+      <img src="fw3.png"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw3.png"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="fw3.png"  style="width:100%">
+    </div>
+    
+  </div>
+<h1>
+  Educational role in stopping Food resource wastage
+</h1>
+<p style="font-size: larger;">
+  Education plays a crucial role in preventing food wastage by raising awareness, changing behaviors, and promoting sustainable practices. Here are some reasons why education is required to stop food resources wastage:
+<br>
+<br>
+
+  1. Understanding the Impact: Education helps people understand the environmental, social, and economic impacts of food wastage. It raises awareness about the resources, energy, and labor involved in food production, as well as the consequences of food waste on climate change, biodiversity loss, and food insecurity. With this knowledge, individuals are more likely to appreciate the value of food and take steps to prevent wastage.
+  <br>
+  <br>
+  2. Changing Consumer Behavior: Education empowers consumers with the knowledge and skills to make informed choices about food purchasing, storage, and consumption. It can promote responsible consumer behavior, such as meal planning, portion control, and creative ways to use leftovers, which can significantly reduce food wastage at the household level.
+  <br>
+  <br>
+  3. Improving Production Practices: Education can help farmers, producers, and food processors adopt best practices in food production and processing that minimize waste. It can provide training on proper harvesting, handling, and storage techniques to prevent spoilage and losses. Education can also promote sustainable agriculture methods, such as regenerative agriculture, organic farming, and integrated pest management, which can reduce the need for synthetic inputs and minimize food wastage.
+  <br>
+  <br>
+  4. Enhancing Supply Chain Management: Education can improve supply chain management practices, such as inventory management, forecasting, and transportation logistics, to optimize food distribution and reduce wastage. It can also promote collaborations and partnerships among stakeholders in the food supply chain, fostering better communication, coordination, and resource utilization, leading to more efficient and sustainable food systems.
+  <br>
+  <br>
+  5. Encouraging Food Donation and Redistribution: Education can create awareness about the importance of food donation and redistribution programs for surplus food from farms, retailers, and consumers. It can highlight the benefits of donating edible food to charitable organizations or community programs to address food insecurity and reduce food wastage. Education can also provide guidance on safe and legal practices for food donation and redistribution.
+  <br>
+  <br>
+  6. Fostering Innovation and Technology Adoption: Education can foster innovation and the adoption of technology solutions for food waste prevention, such as composting, anaerobic digestion, and food recovery for animal feed or bioenergy. It can promote knowledge and skills related to new technologies and initiatives that can help divert food waste from landfills and create value-added products from food waste.
+  <br>
+  <br>
+  7. Advocacy and Policy Change: Education can raise awareness and mobilize support for policy changes and advocacy efforts aimed at preventing food wastage. It can empower individuals to advocate for policy measures such as food waste reduction targets, tax incentives, and regulations to promote food donation, recycling, and sustainable food resource production.
+  <br>
+  <br>
+  In summary, education plays a vital role in preventing food wastage by raising awareness, changing behaviors, fostering innovation, and promoting sustainable practices at various stages of the food supply chain. It empowers individuals, communities, and stakeholders with knowledge and skills to make informed decisions and take actions that contribute to more sustainable and responsible food systems.
+</p>
+<div class="row">
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+
+</p>
+<footer>
+    
+    <p>
+        
+
+        KOCFZ @ShivamKumar@AdityaPathania@Hanshul.<br>
+		</p>
+</footer>
+
+
+</body>
+
+</html>

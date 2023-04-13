@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Agriculture Food resource production</title>
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: cursive;
+background-color: #faf5a1;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: teal;
+color: #fff;
+}
+
+.nav-links a {
+color: #fff;
+}
+
+/* LOGO */
+.logo {
+font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+display: flex;
+gap: 1em;
+font-size: 18px;
+}
+
+.menu li:hover {background-color: #4c9e9e;
+border-radius: 5px;
+transition: 0.3s ease;
+}
+
+.menu li {
+padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+position: relative; 
+}
+
+.dropdown {
+background-color: rgb(1, 139, 139);
+padding: 1em 0;
+position: absolute; /*WITH RESPECT TO PARENT*/
+display: none;
+border-radius: 8px;
+top: 35px;
+}
+
+.dropdown li + li {
+margin-top: 10px;
+}
+
+.dropdown li {
+padding: 0.5em 1em;
+width: 8em;
+text-align: center;
+}
+
+.dropdown li:hover {
+background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    
+    .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+    background-color: #4c9e9e;
+    }
+    }
+    footer {
+        background-color: #f0f0f0; /* Set background color */
+        padding: 10px; /* Add some padding around the footer */
+        text-align: center; /* Center align the footer content */
+        position: fixed; /* Fix the footer to the bottom of the page */
+        bottom: 0; /* Position the footer at the bottom of the page */
+        width: 100%; /* Set the footer width to 100% */
+    }
+    
+    /* Define styles for footer content */
+    footer p {
+        margin: 5px 0; /* Add some margin between paragraphs within the footer */
+    }
+    .abc1, .abc2, .abc3, .abc4, .abc5 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo" style="color:red;">Agricultural food resource production</div>
+
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+
+<!-- USING CHECKBOX HACK -->
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<!-- NAVIGATION MENUS -->
+<div class="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+
+<li class="services">
+<a href="reference.html">References</a>
+
+<!-- DROPDOWN MENU -->
+<!-- <ul class="dropdown">
+<li><a href="/">Dropdown 1 </a></li>
+<li><a href="/">Dropdown 2</a></li>
+<li><a href="/">Dropdown 3</a></li><li><a href="/">Dropdown 4</a></li>
+</ul> -->
+
+</li>
+<li><a href="chart.pdf">charts</a></li>
+<li><a href="https://www.linkedin.com/in/2004shivamkumar/">Contact</a></li>
+</div>
+</ul>
+</nav>
+<p class="body" style="background-color:#fdbdea">
+
+<h1 style="color:green">
+    Overview
+</h1>
+<p style="font-size: larger;">Agriculture is the backbone of food resource production, providing the world's population with the sustenance necessary for survival. Agricultural production involves the cultivation of crops, rearing of livestock, and other activities related to food production. Crops such as grains, vegetables, fruits, and oilseeds are grown on vast agricultural lands using various farming practices, including traditional and modern methods. Livestock farming involves raising animals for meat, milk, eggs, and other animal-derived products. Agriculture also encompasses aquaculture, which involves farming fish, shellfish, and other aquatic organisms.
+
+  Modern agriculture relies on technological advancements such as irrigation systems, machinery, and fertilizers to increase productivity and efficiency. Genetic engineering and biotechnology have also been used to develop genetically modified crops that are resistant to pests, diseases, and environmental conditions. Sustainable agriculture practices are gaining popularity, aiming to reduce the negative impact of agriculture on the environment by using organic farming methods, conserving water, promoting biodiversity, and reducing the use of synthetic inputs.
+  
+  Food resource production in agriculture is influenced by various factors, including climate, soil quality, availability of water, market demand, government policies, and technological innovations. Agricultural production plays a crucial role in addressing food security, ensuring that enough food is available, accessible, and affordable for all populations. However, challenges such as climate change, land degradation, water scarcity, and socio-economic disparities pose significant threats to agriculture and food production. Sustainable and innovative approaches are continuously being developed to meet the increasing global demand for food while mitigating the adverse impacts of agriculture on the environment and society.
+<br><br>
+
+<div class="row">
+    <div class="column">
+      <img src="agri1.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri1.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri1.jpg"  style="width:100%">
+    </div>
+  </div>
+
+</p>
+<h1>
+    Types of Agricultural Food resource production
+</h1>
+<p style="font-size: larger;">
+  <br>
+
+  There are various methods of agricultural food resource production that can be broadly categorized into two main types: crop production and livestock production.
+<br>
+<br>
+Crop production involves the cultivation of various types of crops, which can include grains, fruits and vegetables, oilseeds, and fiber crops. Crop production methods can vary greatly depending on factors such as climate, soil type, and available resources. Traditional methods of crop production may involve the use of organic fertilizers, natural pest control, and manual labor for planting and harvesting. Modern techniques such as genetically modified organisms (GMOs), precision farming, and hydroponics may also be used to optimize crop yields and reduce environmental impacts. Crop production plays a critical role in providing staple foods for human consumption and raw materials for food processing and other industries.
+<br>
+<br>
+Livestock production, on the other hand, involves the rearing and management of animals for food. This can include various types of animals such as cattle, pigs, poultry, and fish. Livestock production methods can vary widely depending on the type of animal, the production system, and the scale of operation. For example, livestock may be raised on natural pastures through grazing, or in intensive confinement systems where animals are housed in controlled environments and fed with formulated diets. Aquaculture, which is the farming of fish, shellfish, and other aquatic animals, is another type of livestock production method. Livestock production provides a valuable source of protein and other nutrients for human consumption and contributes to the overall food supply.
+<br>
+<br>
+In addition to these two main types, there are also other forms of agricultural food resource production, such as agroforestry, which combines tree crops with other crops or livestock in a sustainable manner, and mixed farming, which involves the integration of crop production and livestock production on the same farm. These diverse methods of agricultural food resource production contribute to the availability and diversity of food for human consumption, and play a crucial role in ensuring food security and sustainability.
+    <br><br>
+</p>
+<div class="row">
+    <div class="column">
+      <img src="agri2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri2.jpg"  style="width:100%">
+    </div>
+  </div>
+<h1>
+    Agricultural Food Production Techniques
+</h1>
+<p style="font-size: larger;">
+  There are numerous techniques used in agriculture food production to cultivate crops and raise livestock. Some common techniques include:
+<br>
+<br>
+  1.Ploughing and tilling: Ploughing and tilling are mechanical methods of preparing the soil for planting crops. Ploughing involves turning over the soil with a plough to bury crop residues and weeds, while tilling involves breaking up the soil to create a loose seedbed for planting.
+  <br>
+  <br> 
+  2.Planting and seeding: Planting and seeding methods involve placing seeds or young plants into the soil to establish crops. Common planting techniques include broadcasting (scattering seeds across the soil), drilling (placing seeds in rows or holes), and transplanting (transferring young plants from seedlings to the field).
+  <br>
+<br>
+  3.Irrigation: Irrigation is the process of artificially providing water to crops. Different methods of irrigation include surface irrigation (flooding or furrow irrigation), sprinkler irrigation (spraying water over crops), and drip irrigation (providing water directly to the plant roots).
+  <br>
+<br>
+  4.Fertilization: Fertilization is the application of nutrients to crops to promote healthy growth. Fertilizers can be organic (such as manure, compost, or bone meal) or synthetic (such as nitrogen, phosphorus, and potassium-based fertilizers) and are typically applied to the soil or through foliar spray.
+  <br>
+<br>
+  5.Pest management: Pest management techniques are used to control pests that can damage crops, such as insects, diseases, and weeds. Integrated Pest Management (IPM) is a holistic approach that combines various techniques, including biological control (using beneficial insects or predators), cultural practices (such as crop rotation or intercropping), and chemical control (using pesticides as a last resort).
+  <br>
+<br>
+  6.Harvesting: Harvesting involves the collection of mature crops at the right time for consumption or processing. Harvesting methods vary depending on the crop and can include hand harvesting, machine harvesting, or a combination of both.
+  <br>
+<br>
+  7.Livestock production: Livestock production techniques involve raising animals for meat, milk, eggs, or other products. This can include grazing in pastures, confinement feeding in barns or feedlots, and various management practices for animal health, nutrition, and welfare.
+  <br>
+  <br> 
+  8.Post-harvest handling: Post-harvest handling techniques involve preserving, storing, and processing crops after they are harvested to maintain their quality and freshness. Techniques include drying, curing, refrigeration, freezing, canning, and other forms of processing, as well as proper storage and transportation to prevent spoilage.
+  <br>
+<br>
+  9.Crop rotation and cover cropping: Crop rotation involves growing different crops in a sequence on the same piece of land to improve soil fertility, manage pests and diseases, and optimize resource use. Cover cropping involves planting specific crops, known as cover crops or green manure, to protect and improve the soil between cash crop seasons.
+  <br>
+<br>
+  10.Precision agriculture: Precision agriculture is an advanced technique that uses technology, such as satellite imagery, sensors, and data analytics, to optimize crop management decisions. It involves monitoring and managing crops at a precise level, such as variable rate fertilization, irrigation, and pest management, to optimize resource use and increase crop yields.
+  <br>
+  <br> 
+  These are just a few examples of the many techniques used in agriculture food production. Farmers and food producers often use a combination of these techniques, depending on their specific crops, climate, soil, and other local factors, to optimize their production practices and achieve sustainable and efficient food production.
+<br><br>
+</p>
+<div class="row">
+    <div class="column">
+      <img src="agri3.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri3.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri3.jpg"  style="width:100%">
+    </div>
+    
+  </div>
+<h1>
+  Sustainable production practices
+</h1>
+<p>
+  Sustainable production practices in agriculture food production focus on using methods that minimize negative impacts on the environment, promote biodiversity, conserve natural resources, and maintain the long-term productivity of agricultural systems. Some examples of sustainable production practices in agriculture food production include:
+<br><br>
+  1.Organic farming: Organic farming avoids the use of synthetic fertilizers, pesticides, and genetically modified organisms (GMOs), and instead relies on natural methods of pest control, crop rotation, and composting to maintain soil health and fertility.
+  <br><br>
+  2.Conservation agriculture: Conservation agriculture practices minimize soil disturbance, promote soil cover through techniques such as no-till or reduced tillage, and encourage the use of cover crops to protect the soil from erosion and improve its organic matter content.
+  <br><br>
+  3.Agroforestry: Agroforestry involves integrating trees with crops or livestock in a way that provides multiple benefits, such as improved soil fertility, increased biodiversity, and climate change mitigation through carbon sequestration.
+  <br><br>
+  4.Water conservation: Water conservation practices, such as drip irrigation, precision irrigation, and rainwater harvesting, are used to optimize water use and minimize water waste in agriculture food production.
+  <br><br>
+  5.Integrated pest management (IPM): IPM strategies aim to minimize the use of chemical pesticides by combining various pest control methods, such as biological control, cultural practices, and judicious use of pesticides as a last resort, to manage pests while reducing their impact on the environment and non-target organisms.
+  <br><br>
+  6.Sustainable livestock management: Sustainable livestock management practices include providing appropriate nutrition and health care for animals, ensuring access to clean water, providing ample space for natural behaviors, and managing manure and waste in an environmentally responsible manner.
+  <br><br>
+  7.Genetic diversity: Maintaining genetic diversity in crops and livestock is crucial for resilient and sustainable agricultural systems. This can be achieved through practices such as using traditional or heirloom varieties, conserving local landraces, and avoiding overreliance on a few high-yielding varieties or breeds.
+  <br><br> 
+  8.Resource conservation: Sustainable production practices also aim to conserve resources such as energy, nutrients, and biodiversity. This can be achieved through practices such as recycling crop residues, using renewable energy sources, optimizing nutrient management, and protecting natural habitats within agricultural landscapes.
+  <br><br>
+  9.Education and training: Education and training programs for farmers and agricultural workers on sustainable production practices can help promote adoption of environmentally-friendly methods and enhance their understanding of the importance of sustainability in food production.
+  <br><br>
+  10.Certification and labeling: Certification schemes and labeling systems, such as organic certification, Fair Trade, or Rainforest Alliance, can help consumers make informed choices and support sustainable agriculture food production by rewarding farmers and producers who follow environmentally-friendly practices.
+  <br><br>
+  By adopting and implementing sustainable production practices, agriculture food production can contribute to preserving the environment, conserving natural resources, protecting biodiversity, and ensuring long-term productivity, while also producing healthy and nutritious food for current and future generations.
+</p>
+<div class="row">
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="agri4.jpg"  style="width:100%">
+    </div>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+
+</p>
+<footer>
+    
+    <p>
+        <br>
+
+        KOCFZ @ShivamKumar@AdityaPathania@Hanshul.<br>
+	</p>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Aquatic Food production</title>
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: cursive;
+background-color: #f3cfed;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: teal;
+color: #fff;
+}
+
+.nav-links a {
+color: #fff;
+}
+
+/* LOGO */
+.logo {
+font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+display: flex;
+gap: 1em;
+font-size: 18px;
+}
+
+.menu li:hover {background-color: #4c9e9e;
+border-radius: 5px;
+transition: 0.3s ease;
+}
+
+.menu li {
+padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+position: relative; 
+}
+
+.dropdown {
+background-color: rgb(1, 139, 139);
+padding: 1em 0;
+position: absolute; /*WITH RESPECT TO PARENT*/
+display: none;
+border-radius: 8px;
+top: 35px;
+}
+
+.dropdown li + li {
+margin-top: 10px;
+}
+
+.dropdown li {
+padding: 0.5em 1em;
+width: 8em;
+text-align: center;
+}
+
+.dropdown li:hover {
+background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    
+    .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+    background-color: #4c9e9e;
+    }
+    }
+    footer {
+        background-color: #f0f0f0; /* Set background color */
+        padding: 10px; /* Add some padding around the footer */
+        text-align: center; /* Center align the footer content */
+        position: fixed; /* Fix the footer to the bottom of the page */
+        bottom: 0; /* Position the footer at the bottom of the page */
+        width: 100%; /* Set the footer width to 100% */
+    }
+    
+    /* Define styles for footer content */
+    footer p {
+        margin: 5px 0; /* Add some margin between paragraphs within the footer */
+    }
+    .abc1, .abc2, .abc3, .abc4, .abc5 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo" style="color:red;">AQUATIC FOOD RESOURCE</div>
+
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+
+<!-- USING CHECKBOX HACK -->
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<!-- NAVIGATION MENUS -->
+<div class="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+
+<li class="services">
+<a href="reference.html">References</a>
+
+<!-- DROPDOWN MENU -->
+<!-- <ul class="dropdown">
+<li><a href="/">Dropdown 1 </a></li>
+<li><a href="/">Dropdown 2</a></li>
+<li><a href="/">Dropdown 3</a></li><li><a href="/">Dropdown 4</a></li>
+</ul> -->
+
+</li>
+<li><a href="chart.pdf">charts</a></li>
+<li><a href="https://www.linkedin.com/in/2004shivamkumar/">Contact</a></li>
+</div>
+</ul>
+</nav>
+<p class="body" style="background-color:#fdbdea">
+
+<h1 style="color:green">
+    Overview
+</h1>
+<p >
+    Aquatic food resources encompass a wide range of food items that are derived from freshwater and marine environments. These resources include fish, shellfish, aquatic plants, and other marine organisms. Fish are a significant aquatic food resource and are highly valued for their protein content, omega-3 fatty acids, and other essential nutrients. Shellfish, such as shrimp, crab, and lobster, are also popular food resources and are known for their unique flavors and textures. Additionally, aquatic plants, such as seaweed, are gaining increasing attention as a sustainable food resource due to their high nutritional value and potential culinary applications.
+
+Aquatic food resources are obtained through various methods such as fishing, aquaculture, and mariculture. Fishing involves catching wild fish and other aquatic organisms from rivers, lakes, oceans, and other aquatic habitats. Aquaculture, on the other hand, refers to the controlled cultivation of fish, shellfish, and other aquatic organisms in a controlled environment. Mariculture specifically focuses on the cultivation of marine organisms in saltwater environments.
+
+Sustainability is a critical aspect of aquatic food resources, as overfishing and environmental degradation can threaten the availability of these resources in the long term. Responsible fishing practices, sustainable aquaculture techniques, and ecosystem-based management are important considerations to ensure the sustainable use of aquatic food resources. Additionally, certifications and eco-labels, such as the Marine Stewardship Council (MSC) certification for sustainable fishing and the Aquaculture Stewardship Council (ASC) certification for responsible aquaculture, can provide assurance to consumers that the aquatic food products they consume are sourced sustainably.
+
+Aquatic food resources play a significant role in global food security and nutrition, providing a vital source of protein, healthy fats, and other essential nutrients for millions of people worldwide. They also contribute to livelihoods, economic development, and trade in many coastal and fishing communities. As such, proper management and conservation of aquatic food resources are crucial to ensure their availability for future generations.
+
+In summary, aquatic food resources encompass a diverse range of food items obtained from freshwater and marine environments. They are obtained through fishing, aquaculture, and mariculture, and play a vital role in global food security and nutrition. Sustainable management practices are essential to ensure the long-term availability of these resources and their benefits to human health, livelihoods, and the environment.
+<br><br>
+
+<div class="row">
+    <div class="column">
+      <img src="aquatic2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aquatic2.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aquatic2.jpg"  style="width:100%">
+    </div>
+  </div>
+
+</p>
+<h1>
+    Types of Aquatic Food
+</h1>
+<p>
+    Aquatic food resources include a variety of types of food obtained from freshwater and marine environments, such as fish (e.g., salmon, tuna, cod, tilapia), shellfish (e.g., shrimp, crab, lobster), aquatic plants (e.g., seaweed), and other marine organisms (e.g., mollusks, sea urchins). These types of aquatic food are known for their nutritional value, including protein, omega-3 fatty acids, vitamins, and minerals, and are consumed by millions of people worldwide. They are used in various culinary applications and play a crucial role in global food security, livelihoods, and trade in coastal and fishing communities.
+
+    <br><br>
+</p>
+<div class="row">
+    <div class="column">
+      <img src="aquatic1.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aquatic1.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aquatic1.jpg"  style="width:100%">
+    </div>
+  </div>
+<h1>
+    Aquatic Food Production Techniques
+</h1>
+<p>
+    Aquatic food production, also known as aquaculture, is the cultivation of aquatic organisms such as fish, shellfish, and seaweed in a controlled environment for commercial purposes. Here are some common techniques used in aquatic food production:
+<br>
+    1.Pond culture: This is one of the oldest and most common techniques used in aquaculture. It involves the use of earthen ponds to cultivate fish and shrimp. The ponds are usually fertilized with organic matter to promote the growth of phytoplankton and zooplankton, which serve as food for the fish.
+<br>
+    2.Cage culture: In this technique, fish are kept in cages that are suspended in open water bodies such as lakes, rivers, and seas. The cages are usually made of netting material and are anchored to the bottom of the water body. The fish are fed with pellets or other food sources, and the waste products are flushed out of the cages by the water flow.
+<br>
+    3.Raceway culture: This involves the use of long, narrow channels (raceways) to culture fish. The water flows through the raceway, carrying the fish and their waste products. The fish are fed with pellets or other food sources, and the waste is removed by mechanical or biological filtration.
+<br>
+    4.Recirculating aquaculture systems (RAS): In RAS, fish are kept in tanks or other closed systems where the water is continuously recirculated and treated to maintain optimal water quality. The fish are fed with pellets or other food sources, and the waste is removed by mechanical or biological filtration.
+<br>
+    5.Integrated multi-trophic aquaculture (IMTA): This involves the cultivation of multiple species of aquatic organisms in the same system, where each species benefits from the waste products of the other. For example, fish waste can be used to fertilize seaweed, which in turn absorbs excess nutrients and purifies the water for the fish.
+<br><br>
+</p>
+<div class="row">
+    <div class="column">
+      <img src="aq5.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aq5.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aq5.jpg"  style="width:100%">
+    </div>
+    
+  </div>
+<h1>
+    Sustainable Practices
+</h1>
+<p>
+    Sustainability is a key consideration in the production of aquatic food resources, and there are several sustainable practices that can be adopted for different types of aquatic food.
+
+For fish, sustainable fishing practices are essential. This includes avoiding overfishing by setting catch limits based on scientific data and monitoring fish stocks to ensure they are not depleted beyond sustainable levels. Minimizing bycatch, which refers to unintended catch of non-target species, is also important. This can be achieved through the use of selective gear that reduces bycatch or employing spatial management measures to avoid areas with high bycatch rates. Additionally, avoiding damage to sensitive habitats, such as coral reefs or seagrass beds, is crucial to maintain healthy ecosystems.
+
+In the case of aquaculture, responsible practices are vital to ensure sustainability. This includes using environmentally-friendly feeds made from sustainable and traceable sources, reducing the use of antibiotics and chemicals, and managing waste and effluents to prevent pollution of surrounding waters. Good farm management practices, such as regular monitoring of water quality, health management of farmed species, and preventing the escape of farmed species into the wild, are also important. In addition, considering the carrying capacity of the local environment and avoiding overstocking of fish or shellfish farms can prevent negative impacts on water quality and reduce disease outbreaks.
+
+Ecosystem-based management is another sustainable approach for aquatic food production. This approach considers the broader ecological context and interactions among different species and their habitats. It involves understanding the ecosystem dynamics and maintaining the health and resilience of aquatic ecosystems through measures such as habitat conservation, biodiversity protection, and integrated coastal zone management. By considering the entire ecosystem, rather than focusing solely on individual species or habitats, ecosystem-based management can help ensure the sustainability of aquatic food resources and the surrounding environment.
+
+Certification and eco-labeling schemes provide an additional tool for promoting sustainable practices in aquatic food production. These schemes, such as the Marine Stewardship Council (MSC) for sustainable fishing or the Aquaculture Stewardship Council (ASC) for responsible aquaculture, provide credible third-party verification of sustainable practices. They assess and certify fisheries or aquaculture operations based on rigorous environmental, social, and economic criteria, and can help consumers make informed choices about sustainably sourced aquatic food products.
+
+In summary, sustainable practices for aquatic food production involve responsible fishing practices, responsible aquaculture practices, ecosystem-based management approaches, and certifications or eco-labels. These practices aim to minimize environmental impacts, maintain healthy aquatic ecosystems, and ensure the long-term availability of aquatic food resources for present and future generations.
+</p>
+<div class="row">
+    <div class="column">
+      <img src="aq6.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aq6.jpg"  style="width:100%">
+    </div>
+    <div class="column">
+      <img src="aq6.jpg"  style="width:100%">
+    </div>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+
+</p>
+<footer>
+    
+    <p> 
+        <br>
+
+        KOCFZ @ShivamKumar@AdityaPathania@Hanshul.<br>
+		</p>
+</footer>
+
+
+</body>
+
+</html>
